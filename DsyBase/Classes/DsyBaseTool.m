@@ -11,5 +11,7 @@
 @implementation DsyBaseTool
 - (void)printStr{
     NSLog(@"代少杨打印 hello world");
+    NSLog(@"代少杨打印 你好");
+
 }
 @end
