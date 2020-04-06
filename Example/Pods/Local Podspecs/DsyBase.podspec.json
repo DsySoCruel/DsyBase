@@ -1,0 +1,22 @@
+{
+  "name": "DsyBase",
+  "version": "0.1.0",
+  "summary": "A short description of DsyBase.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/DsySoCruel/DsyBase",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "DsySoCruel": "dai1184749173@163.com"
+  },
+  "source": {
+    "git": "https://github.com/DsySoCruel/DsyBase.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DsyBase/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module DsyBase {
+  umbrella header "DsyBase-umbrella.h"
+
+  export *
+  module * { export * }
+}
