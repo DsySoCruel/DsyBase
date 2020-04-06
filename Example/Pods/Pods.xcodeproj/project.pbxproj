@@ -25,8 +25,8 @@
 		9C53CBA18981B104DEF82C08E96D240B /* Pods-DsyBase_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A823E68D4F96DB04233CE7DD8808B69 /* Pods-DsyBase_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */; };
 		9EE8D3959A78D3456D555B7874996888 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
-		A0593A29243B491B007B0B6D /* DsyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A0593A27243B491B007B0B6D /* DsyManager.h */; };
-		A0593A2A243B491B007B0B6D /* DsyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0593A28243B491B007B0B6D /* DsyManager.m */; };
+		A0593A31243B4AF9007B0B6D /* DsyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A0593A2F243B4AF9007B0B6D /* DsyManager.h */; };
+		A0593A32243B4AF9007B0B6D /* DsyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0593A30243B4AF9007B0B6D /* DsyManager.m */; };
 		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */; };
 		A8181EB09FDEC12133143C08494E56B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		A9678A74E43D85B5D53565D5DFF3FFF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
@@ -111,8 +111,8 @@
 		9A1494C300D4E38131B2BAC5B3F31531 /* Pods-DsyBase_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DsyBase_Tests-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A006A79876B518AD95E77934F48F3743 /* DsyBase.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DsyBase.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0593A27243B491B007B0B6D /* DsyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DsyManager.h; sourceTree = "<group>"; };
-		A0593A28243B491B007B0B6D /* DsyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DsyManager.m; sourceTree = "<group>"; };
+		A0593A2F243B4AF9007B0B6D /* DsyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DsyManager.h; path = DsyBase/Classes/DsyManager.h; sourceTree = "<group>"; };
+		A0593A30243B4AF9007B0B6D /* DsyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DsyManager.m; path = DsyBase/Classes/DsyManager.m; sourceTree = "<group>"; };
 		AE479039444D4C90CDBC0C1A0427DFD2 /* DsyBase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DsyBase-prefix.pch"; sourceTree = "<group>"; };
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		B217AB2A765A36DFC7C1C25EDC9445F9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -177,8 +177,8 @@
 			children = (
 				C9E0D043C82A2096E3E52BF23F5E3E99 /* DsyBaseTool.h */,
 				9206564B8DD49BA4B94C369C0730CF0F /* DsyBaseTool.m */,
-				A0593A27243B491B007B0B6D /* DsyManager.h */,
-				A0593A28243B491B007B0B6D /* DsyManager.m */,
+				A0593A2F243B4AF9007B0B6D /* DsyManager.h */,
+				A0593A30243B4AF9007B0B6D /* DsyManager.m */,
 				84F01B8D9DB7C5CDB8CB6047971535F7 /* Pod */,
 				BED1CE9CCA33E6CB0688FDC0B650B590 /* Support Files */,
 			);
@@ -373,7 +373,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0593A29243B491B007B0B6D /* DsyManager.h in Headers */,
+				A0593A31243B4AF9007B0B6D /* DsyManager.h in Headers */,
 				36E2F4F166C253F8A9888D99E84AFF79 /* DsyBase-umbrella.h in Headers */,
 				C3EBC9BBAF93A465F5EDA5A2E0DA51B2 /* DsyBaseTool.h in Headers */,
 			);
@@ -587,7 +587,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E2721DED766017DD8EFE51009C578D3 /* DsyBase-dummy.m in Sources */,
-				A0593A2A243B491B007B0B6D /* DsyManager.m in Sources */,
+				A0593A32243B4AF9007B0B6D /* DsyManager.m in Sources */,
 				1B787D6F2A80B7197DC652D5358BD0C4 /* DsyBaseTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
