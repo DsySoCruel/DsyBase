@@ -14,6 +14,8 @@
 
 @property (strong, nonatomic) NSString *a;
 
+@property (strong, nonatomic) NSString *branchA;
+
 
 
 @end
