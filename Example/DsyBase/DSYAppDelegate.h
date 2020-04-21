@@ -20,5 +20,7 @@
 
 @property (strong, nonatomic) NSString *branchD;
 
+@property (strong, nonatomic) NSString *branchE;
+
 
 @end
